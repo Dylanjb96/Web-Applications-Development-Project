@@ -108,12 +108,12 @@ Due to time constraints:
    git clone https://github.com/Dylanjb96/Web-Applications-Development-Project.git
    ```
 
-2. Install dependencies
+2. Install Dependencies
    ```bash
    npm install
-```
-3. Start the Server:
+
+3. Start the Server
    ```bash
    npm start
-```
+
 4. Open http://localhost:3000 in your browser
