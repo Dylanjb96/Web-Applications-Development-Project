@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta tags for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streetwear Checkout Page</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- header section -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="image/streetwear-logo.png" alt="">
+        </a>
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <a href="#Home">home</a>
+            <a href="#About">about</a>
+            <a href="#Menu">menu</a>
+            <a href="#Products">products</a>
+            <a href="#Review">review</a>
+            <a href="#Contact">contact</a>
+            <a href="#Blogs">blogs</a>
+        </nav>
+
+        <!-- Icon Buttons -->
+        <div class="icons">
+            <div class="fas fa-user" id="user-btn"></div>
+            <!-- User Button (redirect to profile.html page) -->
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <!-- Cart Button (open shopping cart) -->
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <!-- Menu Button (shown on mobile or tablet size) -->
+        </div>
+    </header>
+    
+    <div class="alert-box">
+        <img src="" alt="">
+    </div>
+    <div class="form">
+        <h1 class="heading">Checkout</h1>
+        <p class="text">Delivery Address</p>
+        <input type="text" id="address" placeholder="address">
+        <input type="text" id="street" placeholder="street">
+        <div class="three-input-container">
+            <input type="text" id="city" placeholder="city">
+            <input type="text" id="county" placeholder="county">
+            <input type="text" id="eircode" placeholder="eircode">
+        </div>
+        <input type="text" id="country" placeholder="country">
+        <div id="error-message" class="text-danger"></div>
+    </div> 
+    <div class="cart-section">
+        <div class="product-list">
+            <p class="section-heading">Your Cart</p>
+            <div class="cart">
+                <% if (menuItems && menuItems.length > 0) { %>
+                    <% menuItems.forEach(item => { %>
+                        <div class="cart-item">
+                            <img src="<%= item.image %>" alt="<%= item.name %>">
+                            <div class="item-details">
+                                <p class="item-name"><%= item.name %></p>
+                                <% if (item.discounted_price) { %>
+                                    <p class="item-price">Price: <%= item.discounted_price %></p>
+                                <% } else { %>
+                                    <p class="item-price">Price: <%= item.original_price %></p>
+                                <% } %>
+                                <p class="item-quantity-display">Quantity: <%= item.quantity %></p>
+<input type="number" class="item-quantity" value="0" min="0">
+
+
+                                <p class="product-id"><%= item.product_id %></p> <!-- Display product_id -->
+                            </div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <p>No items in the cart</p>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    
+    <div class="checkout-section">
+        <div class="checkout-box">
+            <p class="text">Your Total</p>
+            <h1 class="bill">£</h1>
+            <p class="text">Payment Method:</p>
+            <select id="payment" name="payment">
+                <option value="Credit-Card">Credit Card</option>
+                <option value="Debit-Card">Debit Card</option>
+                <option value="PayPal">PayPal</option>
+            </select>
+            <button class="place-order-btn">Place Order</button>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/checkout.js"></script>
+</body>
+</html>

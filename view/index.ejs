@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta tags for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streetwear</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="">
+
+    <!-- header section -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="image/streetwear-logo.png" alt="">
+        </a>
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <a href="#Home">home</a>
+            <a href="#About">about</a>
+            <a href="#Menu">menu</a>
+            <a href="#Products">products</a>
+            <a href="#Review">review</a>
+            <a href="#Contact">contact</a>
+            <a href="#Blogs">blogs</a>
+        </nav>
+
+        <!-- Icon Buttons -->
+        <div class="icons">
+            <div class="fas fa-user" id="user-btn"></div>
+            <!-- User Button (redirect to profile.html page) -->
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <!-- Cart Button (open shopping cart) -->
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <!-- Menu Button (shown on moblie or tablet size) -->
+        </div>
+        <!-- Toggle Button -->
+        <div id="toggle" class="toggle">
+            <!-- Click on the button to change black background to white background -->
+            <div class="indicator"></div>
+        </div>
+        <!-- Shopping Cart Tab -->
+        <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <!-- Cart Items -->
+            <div class="listCart">
+                <div class="item">
+                    <div class="image">
+                        <img src="image/streetwear-orange-shirt.jpeg" alt="">
+                    </div>
+                    <div class="name">
+                        Orange Shirt
+                    </div>
+                    <!-- Total Price -->
+                    <div class="totalPrice">
+                        £0.00
+                    </div>
+                    <!-- Quantity -->
+                    <div class="quantity">
+                        <span class="minus">-</span>
+                        <span class="quantityValue">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="image">
+                        <img src="image/streetwear-green-shorts.jpeg" alt="">
+                    </div>
+                    <div class="name">
+                        Green Shorts
+                    </div>
+                    <!-- Total Price -->
+                    <div class="totalPrice-1">
+                        £0.00
+                    </div>
+                    <!-- Quantity -->
+                    <div class="quantity-1">
+                        <span class="minus">-</span>
+                        <span class="quantityValue">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="image">
+                        <img src="image/streetwear-green-shoes.jpeg" alt="">
+                    </div>
+                    <div class="name">
+                        Green Shoes
+                    </div>
+                    <!-- Total Price -->
+                    <div class="totalPrice-2">
+                        £0.00
+                    </div>
+                    <!-- Quantity -->
+                    <div class="quantity-2">
+                        <span class="minus">-</span>
+                        <span class="quantityValue">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Cart Total -->
+            <div class="CartTotal">
+                <span id="cart-total">0.00</span>
+            </div>
+            <!-- Buttons -->
+            <div class="btn">
+                <button class="close">Close</button>
+                <button class="checkOut" id="checkout-btn" data-product-id="<%= menu.id %>" data-product-name="<%= menu.name %>" data-quantity="1">Check Out</button>
+            </div>
+
+
+    </header>
+
+    <!---home section--->
+    <section class="home" id="Home">
+        <!-- Content -->
+        <div class="content">
+            <h3>Best streetwear clothes</h3>
+            <p>Step into the realm of urban expression with our curated collection of streetwear, where style meets attitude, and every garment tells a story of individuality, authenticity, and the vibrant pulse of the streets.</p>
+            <a href="#" class="btn"> Find your style here</a>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="/image/image1.jpg" alt="">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/image/image2.jpg" alt="">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/image/image3.jpg" alt="">
+                </div>
+    </section>
+
+    <!--about---->
+    <section class="about" id="About">
+        <h1 class="heading"> <span>about</span> us </h1>
+        <div class="row">
+            <div class="image">
+                <img src="image/streetwear-orange-shirt.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>What makes our clothes better?</h3>
+                <p>
+                    Our streetwear clothing stands out for its urban flair and edgy vibe, setting it apart from the rest. Crafted with an acute understanding of contemporary fashion trends and street culture, our designs blend comfort and style effortlessly. What truly makes
+                    our streetwear better is our relentless pursuit of authenticity and uniqueness. We draw inspiration from the streets, music, art, and diverse subcultures, infusing each piece with personality and attitude. From the fit to the finishing
+                    touches, every detail is carefully curated to reflect the spirit of the streets. Our commitment to quality ensures that our streetwear not only looks great but also withstands the rigors of urban life. With our clothing, you're not
+                    just making a fashion statement – you're embracing a lifestyle that celebrates individuality, creativity, and self-expression</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Menu-->
+    <section class="menu" id="Menu">
+        <h1 class="heading"> new <span>products</span></h1>
+        <!-- Content -->
+        <div class="promote-box">
+            <h3>Get <span>20%</span>off When you spend more than £100 - Get <span>30%</span> off when you spend more than £200</h3>
+        </div>
+        <div class="box-container">
+            <div class="box" data-product-id="1">
+                <img src="image/streetwear-orange-shirt.jpeg" alt="">
+                <h3>Orange Shirt</h3>
+                <!--Price -->
+                <div class="price">£20.00 <span>£30.00</span></div>
+                <!-- Quantity -->
+                <div class="quantity">
+                    <span class="minus">-</span>
+                    <span class="quantityValue">0</span>
+                    <span class="plus">+</span>
+                </div>
+                <!-- Add to Cart Button -->
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+
+
+            <div class="box">
+                <img src="image/streetwear-green-shorts.jpeg" alt="">
+                <h3>Green Shorts</h3>
+                <div class="price">£15.00 <span>£30.00</span></div>
+                <div class="quantity">
+                    <span class="minus">-</span>
+                    <span class="quantityValue">0</span>
+                    <span class="plus">+</span>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+
+
+            <div class="box">
+                <img src="image/streetwear-green-shoes.jpeg" alt="">
+                <h3>Green Shoes</h3>
+                <div class="price">£72.00 <span>£102.00</span></div>
+                <div class="quantity">
+                    <span class="minus">-</span>
+                    <span class="quantityValue">0</span>
+                    <span class="plus">+</span>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--Products-->
+
+    <section class="products" id="Products">
+        <h1 class="heading"> our <span>products</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <!-- Product Icons -->
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/streetwear-black-shirt.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Black Shirt</h3>
+                    <!-- Star Review -->
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <!-- Total Price -->
+                    <div class="price">£12.00 <span>£20.00</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/streetwear-blue-shirt.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Blue Shirt</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">£12.00 <span>£20.00</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/streetwear-pink-shirt.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Pink Shirt</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">£12.00 <span>£20.00</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/streetwear-black-shorts.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Black Shorts</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">£12.00 <span>£20.00</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/streetwear-blackandwhite-shorts.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Black&White Shorts</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">£12.00 <span>£20.00</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/streetwear-green-shorts.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Green Shorts</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">£12.00 <span>£20.00</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/streetwear-black-shoes.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Black Shoes</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">£12.00 <span>£20.00</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/streetwear-orange-shoes.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Orange Shoes</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">£12.00 <span>£20.00</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/streetwear-white-shoes.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>White Shoes</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">£12.00 <span>£20.00</span></div>
+                    <a href="#" class="btn">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Reviews-->
+
+    <section class="review" id="Review">
+        <h1 class="heading"> customer's <span>reviews</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="box">
+                    <img src="image/quote-mark.png" alt="" class="quote">
+                    <p>This streetwear clothes shop is an absolute gem! From the moment you step in, you're greeted with an eclectic mix of styles that cater to every taste. The staff is incredibly knowledgeable and helpful, guiding me through their impressive
+                        selection of urban-inspired garments. What sets this shop apart is their attention to detail – each piece feels like a work of art, meticulously crafted to capture the essence of street culture. Whether you're into bold graphic
+                        tees or minimalist designs, you'll find something here that speaks to your sense of style. I walked out feeling like I had discovered a hidden treasure trove of fashion!</p>
+                    <img src="image/profile-1.jpeg" class="user" alt="">
+                    <!-- Reviewer Profile -->
+                    <h3>Dita Tong</h3>
+                    <!-- Star Review -->
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+
+                <div class="box">
+                    <img src="image/quote-mark.png" alt="" class="quote">
+                    <p>I've been a loyal customer of this streetwear clothes shop for years, and for good reason. The quality of their clothing is unmatched, with durable fabrics and impeccable stitching that hold up wash after wash. What I appreciate most
+                        is their commitment to staying ahead of the curve – they're always stocked with the latest trends and limited-edition releases. But what truly sets them apart is their sense of community. The shop hosts regular events and pop-ups,
+                        bringing together like-minded individuals who share a passion for street culture. It's more than just a store – it's a hub for creativity and connection.</p>
+                    <img src="image/profile-2.jpeg" class="user" alt="">
+                    <h3>Claire Fay</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/quote-mark.png" alt="" class="quote">
+                    <p>As someone who's constantly on the lookout for unique streetwear pieces, I can confidently say that this shop never disappoints. Their curated collection of clothing and accessories strikes the perfect balance between edgy and wearable,
+                        making it easy to elevate your everyday style. What impresses me most is their commitment to inclusivity – they offer sizes and styles for all body types, ensuring that everyone feels welcome and represented. Plus, their online
+                        shopping experience is seamless, with fast shipping and hassle-free returns. Whether you're a seasoned streetwear aficionado or just dipping your toes into the scene, this shop is a must-visit.</p>
+                    <img src="image/profile-3.jpeg" class="user" alt="">
+                    <h3>Fin Germe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- Review Button (redirect to review.html page) -->
+                    <div class="give-review" id="give-review-btn">
+                        <a href="/review" class="btn">Give us a review</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+
+    <section class="contact" id="Contact">
+        <h1 class="heading"><span>contact</span></h1>
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56123.54209354917!2d-16.327534321802183!3d28.457814194418496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceccc254171%3A0x43111473d277e52e!2sSanta%20Cruz%20de%20Tenerife%2C%20Spain!5e0!3m2!1sen!2sie!4v1705103811206!5m2!1sen!2sie"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Map of the location of the business -->
+            <form action="">
+                <h3>get in touch with us</h3>
+                <!-- Name Input -->
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name">
+                </div>
+                <!-- Email Input -->
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email">
+                </div>
+                <!-- Number Input -->
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="number">
+                </div>
+                <!-- Contact Button -->
+                <input type="submit" value="contact now" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!--Blog-->
+
+    <section class="blogs" id="Blogs">
+        <h1 class="heading"> our <span>blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="image/streetwear-group-shirts.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Urban Threads: Exploring Street Style Culture</a>
+                    <span>by admin / 21st Jan, 2023</span>
+                    <p>Urban Threads is a vibrant online platform dedicated to exploring the dynamic world of street style culture. From the latest trends in streetwear fashion to interviews with emerging designers and artists, Urban Threads offers a comprehensive
+                        look at the intersection of fashion, music, and urban lifestyle.</p>
+                    <a href="#" class="btn">read more</a>
+                    <!-- Read More button (nothing) -->
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/streetwear-green-shorts.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Urban Threads: Exploring Street Style Culture</a>
+                    <span>by admin / 4th May, 2023</span>
+                    <p>Concrete Jungle is your go-to destination for navigating the bustling landscape of the urban fashion scene. With a focus on streetwear brands, sneaker culture, and the latest style trends, Concrete Jungle offers a mix of fashion editorials,
+                        brand spotlights, and event coverage. </p>
+                    <a href="#" class="btn">read more</a>
+                    <!-- Read More button (nothing) -->
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/streetwear-bunch-of-shoes.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Grit & Glamour: A Closer Look at Street Chic</a>
+                    <span>by admin / 2nd Oct, 2023</span>
+                    <p>Grit & Glamour offers a closer look at the gritty yet glamorous world of street chic fashion. From gritty city streets to high-fashion runways, this blog explores the fusion of urban grit and haute couture glamour. </p>
+                    <a href="#" class="btn">read more</a>
+                    <!-- Read More button (nothing) -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <section class="footer">
+        <!-- Social Share Links -->
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="links">
+            <!-- Navigation Links -->
+            <a href="#Home">home</a>
+            <a href="#About">about</a>
+            <a href="#Menu">menu</a>
+            <a href="#Products">products</a>
+            <a href="#Review">review</a>
+            <a href="#Contact">contact</a>
+            <a href="#Blogs">blogs</a>
+        </div>
+        <!-- Footer Credit -->
+        <div class="credit">created by <span>Dylan Boyle</span> | all rights reserved</div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- JavaScript File -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/checkout.js"></script>
+</body>
+</html>

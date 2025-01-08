@@ -1,0 +1,192 @@
+.alert-box img {
+    max-width: 100%;
+}
+
+.form {
+    max-width: 600px;
+    margin: 100px auto 20px; /* Add margin to the top to move the form away from the navbar */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fd0707; /* Adjust the color to ensure visibility */
+}
+
+.form input {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #959595;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus {
+    border-color: #002aff;
+    outline: none;
+}
+
+.three-input-container {
+    display: flex;
+    gap: 15px;
+}
+
+.three-input-container input {
+    flex: 1;
+}
+
+/* Styles for the cart section */
+.cart-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    width: 65%; /* Adjust width */
+    margin-left: auto; /* Move to the right */
+    margin-right: auto; /* Move to the right */
+}
+
+.product-list {
+    flex: 1;
+    padding: 15px; /* Adjust padding */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Adjust border radius */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adjust box shadow */
+}
+
+.section-heading {
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust margin */
+    color: #333; /* Dark gray color */
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px; /* Adjust image size */
+    height: auto;
+    margin-right: 15px; /* Adjust margin */
+    border-radius: 5px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-name {
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold;
+    margin-bottom: 8px; /* Adjust margin */
+}
+
+.item-price {
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 4px; /* Adjust margin */
+}
+
+.item-quantity-display {
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 4px; /* Adjust margin */
+}
+
+.item-quantity {
+    width: 60px; /* Adjust input width */
+    padding: 6px; /* Adjust padding */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+.product-id {
+    display: none; /* Hide product ID */
+}
+
+.cart-total {
+    margin-top: 15px; /* Adjust margin */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/* Styles for the checkout section */
+.section-heading {
+    margin-bottom: 10px;
+}
+
+/* Styles for the checkout section */
+.checkout-section {
+    flex: 0 0 auto; /* Allow the checkout section to grow as needed */
+    width: 300px; /* Fixed width for the checkout section */
+    margin-left: 100px; /* Add some space between the cart and checkout sections */
+    width: 65%; /* Adjust width */
+    margin-left: auto; /* Move to the right */
+    margin-right: auto; /* Move to the right */
+}
+
+.checkout-box {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Adjust border radius */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adjust box shadow */
+}
+
+.text {
+    margin-bottom: 15px; /* Adjust margin */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+}
+
+.bill {
+    margin-bottom: 20px; /* Adjust margin */
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+}
+
+/* Styles for the payment method dropdown */
+#payment {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.place-order-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff1a1a;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.place-order-btn::before,
+.place-order-btn::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.place-order-btn:hover {
+    background-color: #d00000;
+    box-shadow: inset -30.5em 0 0 0 #00ff73, inset 30.5em 0 0 0 #00ff73;
+}
