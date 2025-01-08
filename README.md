@@ -8,7 +8,7 @@
 ---
 
 ## Project Overview
-This project is a **Clothing Website** specializing in **Streetwear**. It is an improved version of a previous project from my repository called "Streetwear-Web", with enhanced functionalities and the integration of Node.js." It allows users to browse products, register accounts, manage shopping carts, and complete purchases with discounts applied for larger orders.
+This project is a **Clothing Website** specializing in **Streetwear**. It is an improved version of a previous project from my repository called "Streetwear-Web", with enhanced functionalities and the integration of Node.js. It allows users to browse products, register accounts, manage shopping carts, and complete purchases with discounts applied for larger orders.
 
 ### **Home Page**
 The website starts with the **Index Page (Home Page)**, featuring a logo, navigation bar, profile icon, and shopping cart icon. Users can navigate to sections like About, Menu, Products, Review, Contact, and Blogs through a single-page interface.
